@@ -1,0 +1,27 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        String a="yuvasakthi";
+        int n=a.length();
+        int c=0;
+        for(int i=0;i<n;i++)
+        {
+            c=0;
+            for(int j=0;j<n;j++)
+            {
+                if(a.charAt(i)==a.charAt(j))
+                {
+                    c++;
+                }
+            }
+            if(c==1)
+            {
+                System.out.println(a.charAt(i));
+                break;
+            }
+        }
+        
+    }
+}
+    
