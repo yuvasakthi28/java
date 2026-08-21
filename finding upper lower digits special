@@ -1,0 +1,35 @@
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        String a="DFGHsdfgh123456!@#$%^&";
+        int b=0;
+        int c=0;
+        int d=0;
+        int e=0;
+        for(char x:a.toCharArray())
+        {
+            if(Character.isUpperCase(x))
+            {
+                b++;
+            }
+            else if(Character.isLowerCase(x))
+            {
+                c++;
+            }
+            else if(Character.isDigit(x))
+            {
+                d++;
+            }
+            else
+            {
+                e++;
+            }
+        }
+        System.out.println("No of Upper case is "+b);
+        System.out.println("No of Lower case is "+c);
+        System.out.println("No of Digits is "+d);
+        System.out.println("No of Special charac is "+e);
+        
+    }
+}
