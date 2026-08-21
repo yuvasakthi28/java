@@ -1,0 +1,49 @@
+class University
+{
+    static String univName="Anna University";
+}
+class SIT extends University
+{
+    String college="Sathyabama";
+    String dept;
+    int noofStudents;
+    SIT(String dept,int noofStudents)
+    {
+        this.dept=dept;
+        this.noofStudents=noofStudents;
+    }
+}
+class HIT extends University
+{
+    String college="Hindustan";
+    String dept;
+    int noofStudents;
+    HIT(String dept,int noofStudents)
+    {
+        this.dept=dept;
+        this.noofStudents=noofStudents;
+    }
+}
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        SIT s1=new SIT("Biotechnology",60);
+        SIT s2=new SIT("CSE",70);
+        HIT h1=new HIT("ECE",65);
+        HIT h2=new HIT("IT",75);
+        
+        printDetails(s1.univName, s1.college, s1.dept, s1.noofStudents);
+        printDetails(s2.univName, s2.college, s2.dept, s2.noofStudents);
+        printDetails(h1.univName, h1.college, h1.dept, h1.noofStudents);
+        printDetails(h2.univName, h2.college, h2.dept, h2.noofStudents);
+    }
+    static void printDetails(String univ,String college,String dept,int students)
+    {
+        System.out.println("University: "+univ);
+        System.out.println("College: "+college);
+        System.out.println("Dept: "+dept);
+        System.out.println("No. of Students: "+students);
+        System.out.println();
+    }
+}
