@@ -1,0 +1,24 @@
+class dream 
+{
+    int cse,ece,it;
+    public void set_dimension(int a,int b,int c)
+    {
+        cse=a;
+        ece=b;
+        it=c;
+    }
+    public void display()
+    {
+        int t=cse+ece+it;
+        System.out.println("total"+t);
+    }
+}
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        dream x=new dream();
+        x.set_dimension(20,30,40);
+        x.display();
+    }
+}
