@@ -1,0 +1,14 @@
+public class Main
+{
+    public static void val(int a, int b)
+    {
+        if(b==11)
+        return;
+        System.out.println(a+"*"+b+"="+(a*b));
+        val(a,(b+1));
+    }
+    public static void main(String[]args)
+    {
+        val(7,1);
+    }
+}
